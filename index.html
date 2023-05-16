@@ -2,9 +2,23 @@
 <html lang = "en">
     <head>
         <title>My Personal Website</title>
-        <link rel="stylesheet" href="style.css /">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <h1>Hello World!</h1>
+        <img id = "Nameless_King" src="https://static.wikia.nocookie.net/villains/images/f/f9/Nameless_King.jpg/revision/latest?cb=20200524181546" alt="Nameless_King">
+        <p>Approach The Challenge</p>
+        <audio id = "Challenge" src="Dark Souls - Ornstein and Smough.mp3"></audio>
+        <script>
+            let image = document.getElementById("Nameless_King")
+            image.addEventListener("mouseover", function play_song(){
+                let a = document.getElementById("Challenge")
+                a.play()
+            })
+            image.addEventListener("mouseout", function pause_song(){
+                let b = document.getElementById("Challenge")
+                b.pause()
+            })
+        </script>
     </body>
 </html>
